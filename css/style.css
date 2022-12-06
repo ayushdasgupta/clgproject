@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+    font-size: 20px;  
+}
+.nav-list li a{
+    text-decoration: none; 
+    color: black;
+}
+.nav-list li a:hover{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right{
+    width: 30%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0px 25px;
+    padding: 0px 15px;
+    font-size: 20px;
+}
+.signup {
+    padding: 0px 10px;
+}
+.signup li{
+    list-style: none;
+}
+.signup li a{
+    text-decoration: none;
+    color: black;
+}
+.signup:hover{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+.background{
+    background: linear-gradient(180deg,rgb(160, 32, 240), rgba(160, 32, 240, 0.432));
+    background-size: cover;
+    background-blend-mode: darken;
+}
