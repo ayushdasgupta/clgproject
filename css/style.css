@@ -32,8 +32,9 @@ html{
 }
 .nav-list li{
     list-style: none;
-    padding: 26px 30px;
-    font-size: 20px;  
+    padding: 10px 30px;
+    font-size: 24px; 
+
 }
 .nav-list li a{
     text-decoration: none; 
@@ -60,19 +61,80 @@ html{
 }
 .signup li{
     list-style: none;
+    padding: 10px 30px;
+    font-size: 24px; 
 }
 .signup li a{
     text-decoration: none;
     color: black;
 }
-.signup:hover{
+.signup li a:hover{
     color: grey;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
 }
-.background{
-    background: linear-gradient(180deg,rgb(160, 32, 240), rgba(160, 32, 240, 0.432));
+.background-nav{
+    background: rgb(140, 19, 216);
     background-size: cover;
-    background-blend-mode: darken;
+}
+.container{
+    height: 1000px;
+}
+.background{
+background: rgba(160, 32, 240, 0.432);
+}
+.foot{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 3px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 477px;
+        transition: all 0.7s ease-out;
+    }
+    .right{
+        text-align: center;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0%;
+    }
+    .logo{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 50%;
+        border: 3px solid black;
+        border-radius: 50px;
+    }
 }
