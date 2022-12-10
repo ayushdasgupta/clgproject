@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background-nav h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="https://raw.githubusercontent.com/ayushdasgupta/website/master/logo.png"
+                    alt="logo image"></div>
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>About us</b></a></li>
+            <li><a href="#"><b>Contact us</b></a></li>
+        </ul>
+        <div class="right v-class-resp">
+            <div id="login" class="signup">
+                <li><a href="#"><b>Log In</b></a></li>
+            </div>
+            <div id="signup" class="signup">
+                <li><a href="#"><b>Sign Up</b></a></li>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="container background">
+        <div class="login_background">
+            <div class="login_face">
+                <div class="login_acc">
+                    login to your account
+                </div>
+                <div class="box_container">
+                    <form action="/login" method="POST">
+                        <div class="inputbox">
+                            <input type="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <br>
+                        <div class="inputbox">
+                            <input type="password" required="required">
+                            <span>Passwrord</span>
+                        </div>
+                    </form>
+                    <div>Forgot password?<a href="reset_pass.html">reset password</a></div>
+                    
+                    <div>
+                        <a class="login_button" href="lol">login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="foot" class="foot"></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
