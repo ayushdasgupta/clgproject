@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 24px; 
+
+}
+.nav-list li a{
+    text-decoration: none; 
+    color: black;
+}
+.nav-list li a:hover{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right{
+    width: 30%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0px 25px;
+    padding: 0px 15px;
+    font-size: 20px;
+}
+.signup {
+    padding: 0px 10px;
+}
+.signup li{
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 24px; 
+}
+.signup li a{
+    text-decoration: none;
+    color: black;
+}
+.signup li a:hover{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+.background-nav{
+    background: rgb(140, 19, 216);
+    background-size: cover;
+}
+
+.foot{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 3px;
+    margin: 5px 3px;
+}
+.container{
+    height: auto;
+}
+.background{
+background: white;
+}
+.login_background{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.login_face{
+    width: 300px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login_acc{
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 2vw;
+}
+.box_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3vh;
+    flex-direction: column;
+    gap: 25px;
+}
+.inputbox{
+    position: relative;
+    width: 250pxpx;
+}
+.inputbox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 1em;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+    color: aqua;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding:0 10px;
+    background: white;
+}
+
+a.login_button{
+    background-color: aqua;
+    padding:  15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    outline-color: aqua;
+    border-radius: 5px;
+}
+a.login_button:hover{
+    background-color: blueviolet;
+    color: aqua;
+}
+
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 477px;
+        transition: all 0.7s ease-out;
+    }
+    .right{
+        text-align: center;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0%;
+    }
+    .logo{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 50%;
+        border: 3px solid black;
+        border-radius: 50px;
+    }
+}
